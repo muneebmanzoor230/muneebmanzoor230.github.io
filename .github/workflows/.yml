@@ -1,0 +1,8 @@
+name : verceldeploy
+on :
+  -push
+jobs:
+  verceldeploy:
+    name : verceldeploy
+    echo "Deploying to Vercel..."
+  
