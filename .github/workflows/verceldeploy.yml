@@ -1,8 +1,12 @@
-name : verceldeploy
-on :
-  -push
+name: verceldeploy
+
+on:
+  push:
+
 jobs:
   verceldeploy:
-    name : verceldeploy
-    echo "Deploying to Vercel..."
-  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Deploying to Vercel..."
